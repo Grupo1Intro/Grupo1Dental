@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container, .box. .titulo, .content {
+    width: 100%;
+}
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    color: #505050;
+    line-height: 1.7;
+}
+
+.titulo{
+    margin-bottom: 600px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.content{
+    display: flex;
+}
+
+.box figure{
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.box figure img{
+    width: 250px;
+    height: 250px;
+    border-radius: 60%;
+    object-fit: cover;
+}

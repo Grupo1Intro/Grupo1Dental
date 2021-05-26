@@ -1,0 +1,200 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    position: fixed;
+    background: #22242A;
+    padding: 20px;
+    width: 100%;
+    height: 30px;
+}
+
+.left_area h3{
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.logout_btn{
+    padding: 5px;
+    background: #19B3D3;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.logout_btn:hover{
+    background: #0D9DBB;
+}
+
+.siderbar{
+    background: #2F323A;
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+}
+
+.siderbar .profile_image{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+
+.siderbar h4{
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.siderbar a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+}   
+
+.siderbar a:hover{
+    background: #19B3D3;
+}
+
+.siderbar i{
+    padding-right: 10px;
+}
+
+label #siderbar_btn{
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    left: 300px;
+    font-size: 20px;
+    margin: 5px 0;
+    transition: 0.5s;
+    transition-property: color;
+}
+
+label #siderbar_btn:hover{
+    color: #19B3D3;
+}
+
+#check:checked ~ .siderbar{
+    left: -190px;
+}
+
+#check:checked ~ .siderbar a span{
+    display: none;
+}
+
+#check:checked ~ .siderbar a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+
+.content{
+    margin-left: 250px;
+    background: url(imagenes/1.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 120vh;
+    transition: 0.5s;
+}
+
+#check:checked ~ .content{
+    margin-left: 60px;
+
+}
+.contacto{
+    border: 100px solid whitesmoke;
+    border-radius: 100px;
+    padding: 70px 70px 20px;
+    margin-top: 100px;
+    margin-left: 500px;
+    margin-right: 250px;
+    background: url(imagenes/666.jpg) no-repeat;
+    box-shadow: 2px 5px 10px #B5C1C5, 0 0 0 10px #EEF5F7 inset;
+}
+.contacto label{
+    display: block; 
+    font-weight: bold;
+}
+.contacto div{
+    margin-bottom: 25px; 
+}
+.contacto h1{
+    color: blue; 
+}
+.contacto div {
+    color: blue;
+}
+.contacto input[type='text'], .contacto textarea{
+    padding: 2px 35px;
+    width: 225px; 
+    border: 1px solid #CED5D7;
+    resize: none; 
+    box-shadow:0 0 0 3px #EEF5F7;
+    margin: 5px 0;
+}
+.con {
+    margin-top: 10%;
+}
+.con h1 {
+    font-size: 52px;
+    margin-bottom: 60px;
+    text-align: center;
+}   
+.team{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+
+}
+.team .team1{
+    background: url(imagenes/1.jpg) no-repeat;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 500px;
+    padding: 20px;
+    line-height: 20px;
+    position: relative;
+}
+.team .team1 h2{
+    color: yellow;
+    font-size: 25px;
+    margin-top: 50px;
+}
+.team .team1 .img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    top: -50px;
+    left: 50px;
+    transform: translateX(-50px);
+}
+.team .team1 .img img{
+    width: 150px;
+    height: 150px;
+}
